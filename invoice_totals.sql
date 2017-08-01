@@ -1,0 +1,1 @@
+SELECT i.InvoiceId, i.Total, c.FirstName, c.LastName, c.Country, e.FirstName AS "REP" FROM Invoice i LEFT JOIN Customer c ON i.CustomerId = c.CustomerId LEFT JOIN Employee e ON e.EmployeeId = c.SupportRepId
